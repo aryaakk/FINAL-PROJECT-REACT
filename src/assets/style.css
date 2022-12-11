@@ -376,7 +376,8 @@ body {
 
 .wrapTableBooks .header .actionAdd .buttAdd {
     background-color: #415a77;
-    outline: none;    border: none;
+    outline: none;
+    border: none;
     color: #F8EDEB;
     font-size: 20px;
     font-family: var(--font6);
@@ -515,7 +516,7 @@ body {
     justify-content: center;
 }
 
-.formAdd .formm{
+.formAdd .formm {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -525,34 +526,34 @@ body {
     /* box-shadow: 5px 7px 20px #161a1d2b; */
 }
 
-.formAdd .formm .item-inp{
+.formAdd .formm .item-inp {
     text-align: center;
 }
 
-.formAdd .formm .item-inp .inp{
+.formAdd .formm .item-inp .inp {
     height: 40px;
     font-family: var(--font5);
     color: #252525;
     font-size: 17px;
 }
 
-.formAdd .formm .item-inp .ta-inp{
+.formAdd .formm .item-inp .ta-inp {
     font-size: 15px;
     font-family: var(--font5);
 }
 
-.formAdd .formm .item-inp .sel-inp{
+.formAdd .formm .item-inp .sel-inp {
     font-size: 15px;
     font-family: var(--font5);
 }
 
-.formAdd .formm .item-butt{
+.formAdd .formm .item-butt {
     text-align: center;
     padding: 10px;
     margin: 0;
 }
 
-.formAdd .formm .item-butt .subb{
+.formAdd .formm .item-butt .subb {
     width: 14rem;
     background-color: #004e98;
     color: #F8EDEB;

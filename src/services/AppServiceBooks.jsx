@@ -3,7 +3,7 @@ import axios from "axios";
 export async function deleteData(id) {
   try {
     await axios.delete(`http://localhost:3000/books/${id}`);
-    window.location.reload()
+    window.location.reload();
   } catch (error) {
     console.log(error);
   }

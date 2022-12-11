@@ -1,8 +1,6 @@
 import TableBook from "../../../component/TableBook/TableBook";
 
 const MasterBooks = () => {
-  return(
-    <TableBook/>
-  )
+  return <TableBook />;
 };
 export default MasterBooks;

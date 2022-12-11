@@ -2,18 +2,19 @@ import React, { useEffect, useState } from "react";
 import "./../../assets/style.css";
 import { Table } from "antd";
 import axios from "axios";
-import ModalDelete from "../ModalAction/ModalDelete/ModalDelete";
+import ModalDeleteAuthor from "../ModalAction/ModalDelete/ModalDeleteAuthor";
 import ModalUpdate from "../ModalAction/ModalUpdate/ModalUpdate";
 import ModalAdd from "../ModalAction/ModalAdd/ModalAdd";
+import ModalAddAuthor from "../ModalAction/ModalAdd/ModalAddAuthor";
 
-const TableBook = () => {
+const TableAuthor = () => {
   //getBBookDataF
-  const [bookData, setBookData] = useState(null);
-  async function getBooksFetch() {
+  const [author, setAuthor] = useState(null);
+  async function getAuthorFetch() {
     try {
-      const response = await axios.get("http://localhost:3000/books");
+      const response = await axios.get("http://localhost:3000/author");
       if (response.status == 200) {
-        setBookData(response.data);
+        setAuthor(response.data);
         console.log(response.data);
       }
     } catch (error) {
@@ -22,7 +23,7 @@ const TableBook = () => {
   }
 
   useEffect(() => {
-    getBooksFetch();
+    getAuthorFetch();
   }, []);
 
   //tableData
@@ -32,20 +33,16 @@ const TableBook = () => {
       dataIndex: "id",
     },
     {
-      title: "Title Book",
-      dataIndex: "title",
+      title: "Value Author",
+      dataIndex: "value",
     },
     {
-      title: "Genre Book",
-      dataIndex: "genre",
+      title: "Label Author",
+      dataIndex: "label",
     },
     {
-      title: "Author Book",
-      dataIndex: "author",
-    },
-    {
-      title: "Description Book",
-      dataIndex: "desc",
+      title: "Biografi Author",
+      dataIndex: "biografi",
       render: (text) => <p>{text.substring(0, 80)}...</p>,
     },
     {
@@ -54,7 +51,7 @@ const TableBook = () => {
       width: 20,
       render: (_, action) => (
         <div className="action" key={action.id}>
-          <ModalDelete actionDel={action} />
+          <ModalDeleteAuthor actionDel={action} />
           <ModalUpdate actionUpdt={action} />
         </div>
       ),
@@ -66,18 +63,18 @@ const TableBook = () => {
       <div className="wrapTableBooks">
         <div className="header">
           <div className="text">
-            <span>Master Data Book</span>
+            <span>Master Author Book</span>
           </div>
           <div className="actionAdd">
-            <ModalAdd />
+            <ModalAddAuthor />
           </div>
         </div>
         <hr className="rowBooks" />
         <div className="contentTable">
-          <Table className="table" columns={columns} dataSource={bookData} />
+          <Table className="table" columns={columns} dataSource={author} />
         </div>
       </div>
     </>
   );
 };
-export default TableBook;
+export default TableAuthor;
