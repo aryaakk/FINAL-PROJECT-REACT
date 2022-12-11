@@ -1,13 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import './assets/style.css'
+import Headers from './component/Headers/Headers';
+import HomePages from './pages/HomePages/HomePages';
+import DetailPages from './pages/DetailPages/DetailPages';
+import MasterBooks from './pages/MasterData/dataBook/MasterBookPages';
+import MasterAuthors from './pages/MasterData/dataAuthors/MasterAuthorPages';
+import MasterGenre from './pages/MasterData/dataGenre/MasterGenrePages';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Headers/>
+      <Routes>
+        <Route path='/' element={<HomePages/>}/>
+        <Route path='/detailPages/:id' element={<DetailPages/>}/>
+        <Route path='/DataBook' element={<MasterBooks/>}/>
+        <Route path='/DataAuthors' element={<MasterAuthors/>}/>
+        <Route path='/DataGenre' element={<MasterGenre/>}/>
+        <Route path='*' />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

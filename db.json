@@ -1,0 +1,67 @@
+{
+  "author": [
+    {
+      "id": 1,
+      "value": "William Shakespeare",
+      "label": "William Shakespeare",
+      "biografi": "William Shakespeare adalah seorang pujangga, dramawan, dan pemain sandiwara berkebangsaan Inggris, secara luas dianggap sebagai penulis drama berbahasa Inggris terhebat dan dramawan termasyhur di dunia. Ia sering disebut sebagai penyair nasional Inggris dan dijuluki Pujangga dari Avon"
+    },
+    {
+      "id": 2,
+      "value": "Agatha Christie",
+      "label": "Agatha Christie",
+      "biografi": "Dame Agatha Mary Clarissa Christie, DBE adalah seorang penulis fiksi kriminal Inggris yang terkenal dengan enam puluh enam novel detektif dan empat belas koleksi cerita pendeknya. Karyanya yang paling terkenal bercerita tentang detektif fiksi Hercule Poirot dan Miss Marple"
+    }
+  ],
+  "books": [
+    {
+      "title": "Mindset",
+      "author": "Agatha Christie",
+      "authorId": 2,
+      "genre": "Inspirasi",
+      "cover": "https://koleksiperpus.jakarta.go.id/dispusip/uploaded_files/sampul_koleksi/original/Monograf/188308.png",
+      "desc": "This book explains clearly how the belief in our abilities greatly affects the way we learn and make choices in life.",
+      "id": 1
+    },
+    {
+      "title": "Guru Aini",
+      "author": "William Shakespeare",
+      "authorId": 1,
+      "genre": "Administrasi",
+      "cover": "https://koleksiperpus.jakarta.go.id/dispusip/uploaded_files/sampul_koleksi/original/Monograf/192409.png",
+      "desc": "\"It's the same thing my life is now, ma'am,\" Desi thrust the notebook into the middle of the desk. Mrs. Amanah, who is also a math teacher, smiled bitterly at the sight of a straight-line equation with variables self-defined by Desi, x1: education, x2: intelligence. What caught his eye was the constant a: sacrifice. \"Education requires sacrifice, ma'am. Sacrifice is a fixed value, constant, unchanging.\" That said, based on research in the middle of nowhere, generally the idealism of young people who have just graduated from college lasts for at most 4 months. After that they would become complainers, grumblers, and abusers like many others, then be sadly dragged down by the torrent of the great river of routines and bureaucratic pleasantries and then submit to a bad system. In the reality of such a life, how far has Desi dared to maintain his idealism of being a math teacher in a remote school?",
+      "id": 2
+    },
+    {
+      "title": "Ayah Dan Sirkus Pohon",
+      "author": "Agatha Christie",
+      "authorId": 2,
+      "genre": "Fiksi",
+      "cover": "https://koleksiperpus.jakarta.go.id/dispusip/uploaded_files/sampul_koleksi/original/Monograf/192223.jpg",
+      "desc": "Betapa Sabari menyayangi Zorro. Ingin dia memeluknya sepanjang waktu. Dia terpesona melihat makhluk kecil yang sangat indah dan seluruh kebaikan yang terpancar darinya. Diciuminya anak itu dari kepala sampai ke jari-jemari kakinya yang mungil. Kalau malam Sabari susah susah tidur lantaran membayangkan bermacam rencana yang akan dia lalui dengan anaknya jika besar nanti.",
+      "id": 3
+    }
+  ],
+  "genre": [
+    {
+      "id": 1,
+      "genre": "Administrasi"
+    },
+    {
+      "id": 2,
+      "genre": "Inspirasi"
+    },
+    {
+      "id": 3,
+      "genre": "Sejarah"
+    },
+    {
+      "id": 4,
+      "genre": "Fiksi"
+    },
+    {
+      "id": 5,
+      "genre": "Ensiklopedia"
+    }
+  ]
+}
